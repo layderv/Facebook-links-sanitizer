@@ -1,0 +1,1 @@
+# Facebook links sanitizer
