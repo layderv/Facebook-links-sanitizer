@@ -13,7 +13,6 @@ function sanitize_anchor(anchor) {
             }
             for (const attr_name of matches) {
                 anchor.removeAttribute(attr_name);
-                console.log("removed", attr_name);
             }
         }
     }
@@ -26,6 +25,12 @@ function sanitize(anchors) {
 }
 
 document.addEventListener('click', function(e) {
+    e = e || window.event;
+    let target = e.target || e.srcElement;
+    sanitize_anchor(target);
+}, false);
+
+document.addEventListener('mouseover', function(e) {
     e = e || window.event;
     let target = e.target || e.srcElement;
     sanitize_anchor(target);

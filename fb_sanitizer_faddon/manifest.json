@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "FB Anchor Sanitizer",
-    "version": "0.1",
+    "version": "1.0",
   
     "description": "Restores the proper URL of anchors and deletes other data- from anchors in Facebook.",
   
